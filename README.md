@@ -1,10 +1,12 @@
 # FXMacroData for CAMEL
 
-Use sourced macroeconomic observations and release calendars in CAMEL research agents. USD catalogue, macro history and release-calendar queries require no API key, account or credit card.
+Build CAMEL research agents that work with official macroeconomic observations, release calendars and sourced market context.
+
+[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=camel_subscribe) for non-USD data, full available history, FX, commodities and positioning. Use the public USD workflow to evaluate the integration before connecting your subscription.
 
 [Explore FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=camel_readme) · [API documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=camel_docs)
 
-The public example requests the most recent 90 days of USD history. Broader history and protected datasets follow the documented access limits.
+The public USD catalogue, recent macro history and release calendar support evaluation without an API key. The history example requests the most recent 90 days. Data availability varies by series; your subscription and its terms govern protected access.
 
 ## Install from source
 
@@ -36,7 +38,7 @@ All 72 REST/MCP operations are separately registered with complete input schemas
 
 Each result preserves the original payload as `data`, exposes `records` for analysis and includes public source/provider links. Keep FXMacroData-generated forecasts separate from market consensus. Do not infer missing values or future release times. MCP visual artifacts are preserved but not rendered as MCP Apps.
 
-## Optional credentials
+## Connect your FXMacroData subscription
 
 Supply your own `FXMACRODATA_API_KEY` environment variable or pass a key from your application's secret manager. No key is required for the USD example; `api_key=""` explicitly disables environment credentials. Access to other datasets follows your FXMacroData entitlement.
 
