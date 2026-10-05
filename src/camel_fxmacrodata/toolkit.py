@@ -15,7 +15,7 @@ from fxmacrodata_public import (
 
 SITE_URL = (
     "https://fxmacrodata.com/?utm_source=camel&utm_medium=integration"
-    "&utm_campaign=open_source_integrations&utm_content=app"
+    "&utm_campaign=camel-fxmacrodata&utm_content=app"
 )
 
 
